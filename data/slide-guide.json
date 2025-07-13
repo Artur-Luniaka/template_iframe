@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Basic Controls",
+    "description": "Master the fundamental movements to navigate through colorful worlds.",
+    "tips": [
+      "Tap to jump over obstacles",
+      "Swipe left/right to change direction",
+      "Hold to maintain momentum",
+      "Release to slow down gradually"
+    ]
+  },
+  {
+    "title": "Speed Management",
+    "description": "Learn to control your jelly's velocity for optimal performance.",
+    "tips": [
+      "Build up speed on straight sections",
+      "Use momentum to clear gaps",
+      "Slow down before sharp turns",
+      "Collect speed boosters for temporary acceleration"
+    ]
+  },
+  {
+    "title": "Obstacle Navigation",
+    "description": "Develop the skills to overcome various challenges.",
+    "tips": [
+      "Watch for color-coded obstacles",
+      "Time your jumps precisely",
+      "Use walls to bounce and change direction",
+      "Look ahead to plan your route"
+    ]
+  },
+  {
+    "title": "Power-up Strategy",
+    "description": "Maximize your score with strategic power-up usage.",
+    "tips": [
+      "Collect color-changing orbs for bonuses",
+      "Save speed boosts for difficult sections",
+      "Use life bonuses when health is low",
+      "Chain power-ups for combo multipliers"
+    ]
+  }
+]

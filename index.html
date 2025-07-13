@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jelly Dash 3D - Slide Through Colorful Worlds</title>
+    <link rel="stylesheet" href="css/gel-styles.css" />
+  </head>
+  <body>
+    <div id="squish-header"></div>
+
+    <main class="dash-main">
+      <!-- Hero Section -->
+      <section class="bounce-hero">
+        <div class="hero-background">
+          <div
+            class="hero-image active"
+            style="background-image: url('./images/gel-hero-1.jpg')"
+          ></div>
+          <div
+            class="hero-image"
+            style="background-image: url('./images/gel-hero-2.jpg')"
+          ></div>
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="squish-container">
+          <h1 class="dash-title">Jelly Dash 3D</h1>
+          <p class="slide-subtitle">
+            Slide through colorful worlds with your stretchy jelly hero
+          </p>
+          <button class="launch-gel" onclick="squishScrollToGame()">
+            Start Sliding
+          </button>
+        </div>
+      </section>
+
+      <!-- Stretchy Features -->
+      <section class="stretch-features">
+        <div class="squish-container">
+          <h2 class="bounce-heading">Stretchy Features</h2>
+          <div class="feature-flex">
+            <div class="feature-cards">
+              <div class="speed-bubble">
+                <h3>Speed Control</h3>
+                <p>Master the art of momentum with intuitive speed mechanics</p>
+              </div>
+              <div class="agility-bubble">
+                <h3>Agility Mastery</h3>
+                <p>Navigate through obstacles with jelly-like flexibility</p>
+              </div>
+              <div class="obstacle-bubble">
+                <h3>Dynamic Obstacles</h3>
+                <p>Face ever-changing challenges that test your reflexes</p>
+              </div>
+            </div>
+            <div class="feature-text">
+              <h3>Experience the Ultimate Jelly Adventure</h3>
+              <p>
+                Dive into a world where physics meets fun in the most
+                spectacular way. Our innovative jelly mechanics create an
+                unparalleled gaming experience that feels both familiar and
+                revolutionary.
+              </p>
+              <p>
+                Every slide, every bounce, every stretch is carefully crafted to
+                provide the perfect balance of challenge and satisfaction. The
+                dynamic environment responds to your movements, creating a truly
+                interactive playground where your skills determine your success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Slide -->
+      <section id="slide-guide" class="slide-guide">
+        <div class="squish-container">
+          <h2 class="bounce-heading">How to Slide</h2>
+          <div id="slide-content" class="guide-content">
+            <div class="slide-item">
+              <div class="slide-icon">🎮</div>
+              <h3>Basic Controls</h3>
+              <p>
+                Master the fundamental movements to navigate through colorful
+                worlds.
+              </p>
+              <ul>
+                <li>Tap to jump over obstacles</li>
+                <li>Swipe left/right to change direction</li>
+                <li>Hold to maintain momentum</li>
+                <li>Release to slow down gradually</li>
+              </ul>
+            </div>
+            <div class="slide-item">
+              <div class="slide-icon">⚡</div>
+              <h3>Speed Management</h3>
+              <p>
+                Learn to control your jelly's velocity for optimal performance.
+              </p>
+              <ul>
+                <li>Build up speed on straight sections</li>
+                <li>Use momentum to clear gaps</li>
+                <li>Slow down before sharp turns</li>
+                <li>Collect speed boosters for temporary acceleration</li>
+              </ul>
+            </div>
+            <div class="slide-item">
+              <div class="slide-icon">🎯</div>
+              <h3>Obstacle Navigation</h3>
+              <p>Develop the skills to overcome various challenges.</p>
+              <ul>
+                <li>Watch for color-coded obstacles</li>
+                <li>Time your jumps precisely</li>
+                <li>Use walls to bounce and change direction</li>
+                <li>Look ahead to plan your route</li>
+              </ul>
+            </div>
+            <div class="slide-item">
+              <div class="slide-icon">💎</div>
+              <h3>Power-up Strategy</h3>
+              <p>Maximize your score with strategic power-up usage.</p>
+              <ul>
+                <li>Collect color-changing orbs for bonuses</li>
+                <li>Save speed boosts for difficult sections</li>
+                <li>Use life bonuses when health is low</li>
+                <li>Chain power-ups for combo multipliers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gamer Echoes -->
+      <section class="echo-chamber">
+        <div class="squish-container">
+          <h2 class="bounce-heading">Gamer Echoes</h2>
+          <div id="echo-content" class="echo-grid">
+            <!-- Reviews loaded from JSON -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Jelly Tracks -->
+      <section class="track-gallery">
+        <div class="squish-container">
+          <h2 class="bounce-heading">Jelly Tracks</h2>
+          <div class="track-flex">
+            <div class="track-image">
+              <img src="./images/jelly-img.jpg" alt="Jelly Dash 3D Gameplay" />
+            </div>
+            <div class="track-cards">
+              <div class="straight-track">
+                <h3>Straight Shots</h3>
+                <p>Perfect your speed on linear challenges</p>
+              </div>
+              <div class="winding-track">
+                <h3>Winding Paths</h3>
+                <p>Navigate through complex curves and turns</p>
+              </div>
+              <div class="obstacle-track">
+                <h3>Obstacle Courses</h3>
+                <p>Test your agility through dynamic barriers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Demo -->
+      <section class="game-demo">
+        <div class="squish-container">
+          <div class="iframe-container">
+            <iframe
+              src="https://html5.gamemonetize.co/64sbpx61sag3up4r4j5u488b5u7ngrt7/"
+              width="1280"
+              height="720"
+              scrolling="none"
+              frameborder="0"
+              title="Jelly Dash 3D Game Demo"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Color Boosts -->
+      <section class="boost-zone">
+        <div class="squish-container">
+          <h2 class="bounce-heading">Color Boosts</h2>
+          <div class="boost-showcase">
+            <div class="color-shift">
+              <div class="boost-icon">🌈</div>
+              <h3>Color Shifting</h3>
+              <p>
+                Transform your jelly's appearance with vibrant power-ups that
+                change your character's hue and unlock special abilities
+              </p>
+              <div class="boost-features">
+                <span class="boost-tag">Visual</span>
+                <span class="boost-tag">Special</span>
+              </div>
+            </div>
+            <div class="speed-burst">
+              <div class="boost-icon">⚡</div>
+              <h3>Speed Burst</h3>
+              <p>
+                Unleash temporary velocity boosts that send you flying through
+                levels with incredible momentum and precision
+              </p>
+              <div class="boost-features">
+                <span class="boost-tag">Speed</span>
+                <span class="boost-tag">Temporary</span>
+              </div>
+            </div>
+            <div class="life-bonus">
+              <div class="boost-icon">❤️</div>
+              <h3>Life Bonus</h3>
+              <p>
+                Collect extra lives for extended gameplay sessions and survive
+                longer in challenging obstacle courses
+              </p>
+              <div class="boost-features">
+                <span class="boost-tag">Defense</span>
+                <span class="boost-tag">Permanent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="squish-footer"></div>
+
+    <script src="js/gel-scripts.js"></script>
+  </body>
+</html>

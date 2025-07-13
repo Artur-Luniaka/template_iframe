@@ -1,0 +1,32 @@
+[
+  {
+    "name": "JellyMaster",
+    "text": "Amazing game! The physics feel so smooth and satisfying. I love how the jelly stretches and bounces.",
+    "rating": 5
+  },
+  {
+    "name": "SpeedDemon",
+    "text": "Perfect for quick gaming sessions. The speed mechanics are incredibly responsive and fun.",
+    "rating": 5
+  },
+  {
+    "name": "ColorLover",
+    "text": "The visual design is absolutely stunning. Each level has its own unique color palette that's so vibrant!",
+    "rating": 4
+  },
+  {
+    "name": "MobileGamer",
+    "text": "Best mobile game I've played this year. Controls are intuitive and the progression system is addictive.",
+    "rating": 5
+  },
+  {
+    "name": "CasualPlayer",
+    "text": "Great for relaxing after work. The music and sound effects create such a cheerful atmosphere.",
+    "rating": 4
+  },
+  {
+    "name": "ProGamer",
+    "text": "The skill ceiling is perfect - easy to learn, hard to master. I keep coming back for better scores.",
+    "rating": 5
+  }
+]

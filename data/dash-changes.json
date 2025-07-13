@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Version 2.1.0 - Jelly Physics Overhaul",
+    "date": "December 15, 2024",
+    "description": "Complete rewrite of the jelly physics engine for smoother, more realistic movement.",
+    "details": [
+      "Improved collision detection with better bounce mechanics",
+      "New color-shifting system with 12 unique transformations",
+      "Enhanced mobile controls with haptic feedback",
+      "Optimized performance for older devices",
+      "Added 5 new levels with unique mechanics"
+    ],
+    "type": "major"
+  },
+  {
+    "title": "Bug Fixes & Performance",
+    "date": "December 10, 2024",
+    "description": "Squashed several bugs and improved overall game stability.",
+    "details": [
+      "Fixed rare crash on level 15",
+      "Resolved audio sync issues on Android",
+      "Improved loading times by 30%",
+      "Fixed visual glitch with jelly stretching"
+    ],
+    "type": "update"
+  },
+  {
+    "title": "New Power-ups Added",
+    "date": "December 5, 2024",
+    "description": "Introducing exciting new power-ups to enhance your jelly adventure.",
+    "details": [
+      "Time Warp: Temporarily slows down obstacles",
+      "Jelly Clone: Creates a temporary duplicate",
+      "Rainbow Trail: Leaves colorful path for bonus points",
+      "Gravity Flip: Inverts gravity for unique gameplay"
+    ],
+    "type": "feature"
+  },
+  {
+    "title": "Level Editor Beta",
+    "date": "November 28, 2024",
+    "description": "Create your own jelly adventures with our new level editor.",
+    "details": [
+      "Drag-and-drop interface for easy level creation",
+      "Share levels with the community",
+      "Rate and comment on other players' levels",
+      "Weekly contests with prizes"
+    ],
+    "type": "beta"
+  }
+]

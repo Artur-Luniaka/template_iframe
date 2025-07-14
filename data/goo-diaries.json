@@ -3,6 +3,7 @@
     "title": "Mastering the Speed Run",
     "author": "JellyMaster",
     "date": "December 10, 2024",
+    "image": "gel-game-1.jpg",
     "content": "After 3 months of practice, I finally achieved my goal of completing the Rainbow Road level in under 2 minutes! The key was learning to use the momentum mechanics to my advantage. I discovered that if you time your jumps perfectly with the jelly's natural bounce, you can maintain incredible speed through the entire level.",
     "tips": [
       "Practice the timing of your jumps on easier levels first",
@@ -15,48 +16,13 @@
     "title": "The Art of Color Coordination",
     "author": "ColorLover",
     "date": "December 8, 2024",
+    "image": "gel-game-2.jpg",
     "content": "I've been experimenting with the new color-shifting mechanics, and wow! The visual effects are absolutely stunning. I found that certain color combinations work better for different types of obstacles. Purple seems to work best for speed sections, while green gives you better control for precision jumps.",
     "tips": [
       "Purple = Speed boost, perfect for straight sections",
       "Green = Better control, great for obstacle courses",
       "Blue = Enhanced jumping ability",
       "Red = Temporary invincibility against certain obstacles"
-    ]
-  },
-  {
-    "title": "My First Community Level",
-    "author": "LevelCreator",
-    "date": "December 5, 2024",
-    "content": "I just published my first custom level using the new level editor! It took me about 4 hours to perfect, but the result is amazing. The level features a unique mechanic where you have to bounce between moving platforms while avoiding color-coded obstacles. The community response has been incredible!",
-    "tips": [
-      "Start with simple mechanics and build complexity gradually",
-      "Test your level thoroughly before publishing",
-      "Get feedback from other players",
-      "Don't be afraid to iterate and improve"
-    ]
-  },
-  {
-    "title": "The Perfect Combo Run",
-    "author": "ComboKing",
-    "date": "December 3, 2024",
-    "content": "Yesterday I achieved what I thought was impossible - a perfect combo run on the Neon Night level! I managed to collect every power-up, hit every bonus target, and finish with zero damage taken. The key was using the new Jelly Clone power-up strategically to collect items that would otherwise be out of reach.",
-    "tips": [
-      "Plan your route before starting the level",
-      "Save power-ups for difficult sections",
-      "Practice the timing of power-up combinations",
-      "Don't rush - precision is more important than speed"
-    ]
-  },
-  {
-    "title": "Mobile Gaming Revolution",
-    "author": "MobileGamer",
-    "date": "November 30, 2024",
-    "content": "As someone who primarily games on mobile, I'm blown away by how well Jelly Dash 3D works on touch devices. The haptic feedback makes every jump feel satisfying, and the controls are so intuitive that I can play one-handed while commuting. This is exactly what mobile gaming should be!",
-    "tips": [
-      "Enable haptic feedback for better immersion",
-      "Practice with one hand for convenience",
-      "Use the auto-save feature for quick sessions",
-      "Adjust sensitivity settings to your preference"
     ]
   }
 ]

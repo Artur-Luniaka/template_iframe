@@ -234,12 +234,75 @@ function squishInitHeroSlider() {
   setInterval(squishSwitchImage, 3000);
 }
 
+// --- Scroll To Top Button ---
+function createScrollToTopButton() {
+  const btn = document.createElement("button");
+  btn.className = "scroll-to-top";
+  btn.title = "Scroll to top";
+  btn.innerHTML = "↑";
+  document.body.appendChild(btn);
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  function toggleButton() {
+    if (window.scrollY > 200) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  }
+  window.addEventListener("scroll", toggleButton);
+  toggleButton();
+}
+
+// --- Cookie Banner ---
+function createCookieBanner() {
+  // Check if user already accepted cookies
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    return;
+  }
+
+  const banner = document.createElement("div");
+  banner.className = "cookie-banner";
+  banner.innerHTML = `
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <strong>🍪 We use cookies</strong> to enhance your browsing experience and provide personalized content. By continuing to use this site, you consent to our use of cookies.
+      </div>
+      <div class="cookie-actions">
+        <button class="accept-cookies">Accept Cookies</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(banner);
+
+  // Show banner after a short delay
+  setTimeout(() => {
+    banner.classList.add("show");
+  }, 1000);
+
+  // Handle accept button click
+  const acceptBtn = banner.querySelector(".accept-cookies");
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    banner.classList.remove("show");
+    setTimeout(() => {
+      banner.remove();
+    }, 400);
+  });
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   squishLoadContent();
   squishUpdateYear();
   squishOptimizePerformance();
   squishInitHeroSlider();
+  createScrollToTopButton();
+  createCookieBanner();
 
   // Add hover effects to interactive elements
   const interactiveElements = document.querySelectorAll(

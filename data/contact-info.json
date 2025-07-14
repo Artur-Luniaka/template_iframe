@@ -2,21 +2,21 @@
   {
     "icon": "📧",
     "title": "Email",
-    "value": "hello@jellydash3d.com",
-    "link": "mailto:hello@jellydash3d.com",
+    "value": "hello@VirtualRushWay.com",
+    "link": "mailto:hello@VirtualRushWay.com",
     "linkText": "Send Email"
   },
   {
     "icon": "📞",
     "title": "Phone",
-    "value": "+81-3-1234-5678",
-    "link": "tel:+81-3-1234-5678",
+    "value": "+61 2 6600 7745",
+    "link": "tel:+61 2 6600 7745",
     "linkText": "Call Us"
   },
   {
     "icon": "📍",
     "title": "Address",
-    "value": "Tokyo, Japan",
+    "value": "15 Queens Road, Melbourne VIC 3004, Australia",
     "link": "#",
     "linkText": "View on Map"
   },
@@ -26,19 +26,5 @@
     "value": "Monday - Friday: 9:00 AM - 6:00 PM (JST)",
     "link": null,
     "linkText": null
-  },
-  {
-    "icon": "🌐",
-    "title": "Website",
-    "value": "www.jellydash3d.com",
-    "link": "https://www.jellydash3d.com",
-    "linkText": "Visit Website"
-  },
-  {
-    "icon": "💬",
-    "title": "Support",
-    "value": "support@jellydash3d.com",
-    "link": "mailto:support@jellydash3d.com",
-    "linkText": "Get Support"
   }
 ]

@@ -25,11 +25,6 @@ function squishRenderContact(contactData) {
                 <div class="contact-details-bubble">
                     <h3>${item.title}</h3>
                     <p>${item.value}</p>
-                    ${
-                      item.link
-                        ? `<a href="${item.link}" class="contact-link-bubble">${item.linkText}</a>`
-                        : ""
-                    }
                 </div>
             </div>
         `;
@@ -46,24 +41,21 @@ function squishFallbackContact() {
                 <div class="contact-icon-bubble">📧</div>
                 <div class="contact-details-bubble">
                     <h3>Email</h3>
-                    <p>hello@jellydash3d.com</p>
-                    <a href="mailto:hello@jellydash3d.com" class="contact-link-bubble">Send Email</a>
+                    <p>hello@VirtualRushWay.com</p>
                 </div>
             </div>
             <div class="contact-item-bubble">
                 <div class="contact-icon-bubble">📞</div>
                 <div class="contact-details-bubble">
                     <h3>Phone</h3>
-                    <p>+81-3-1234-5678</p>
-                    <a href="tel:+81-3-1234-5678" class="contact-link-bubble">Call Us</a>
+                    <p>+61 2 6600 7745</p>
                 </div>
             </div>
             <div class="contact-item-bubble">
                 <div class="contact-icon-bubble">📍</div>
                 <div class="contact-details-bubble">
                     <h3>Address</h3>
-                    <p>Tokyo, Japan</p>
-                    <a href="#" class="contact-link-bubble">View on Map</a>
+                    <p>15 Queens Road, Melbourne VIC 3004, Australia</p>
                 </div>
             </div>
         `;
@@ -129,8 +121,59 @@ function squishInitFormAnimations() {
 }
 
 // Initialize contact page
-document.addEventListener("DOMContentLoaded", () => {
-  squishLoadContact();
-  squishInitForm();
-  squishInitFormAnimations();
+document.addEventListener("DOMContentLoaded", function () {
+  squishLoadContact(); // ВОЗВРАЩАЕМ ОТОБРАЖЕНИЕ КАРТОЧЕК!
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    // 1. Simple validation
+    let valid = true;
+    const fields = ["name", "phone", "message"];
+    fields.forEach((id) => {
+      const el = form.querySelector(`[name="${id}"]`);
+      if (el) {
+        el.classList.remove("input-error");
+        if (!el.value.trim()) {
+          el.classList.add("input-error");
+          valid = false;
+        }
+      }
+    });
+    if (!valid) return;
+
+    // 2. Overlay + spinner
+    let overlay = document.createElement("div");
+    overlay.className = "squish-overlay";
+    overlay.innerHTML = '<div class="squish-spinner"></div>';
+    document.body.appendChild(overlay);
+
+    // 3. Simulate sending (1.5s)
+    setTimeout(() => {
+      // Remove overlay
+      overlay.remove();
+      // 4. Scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      // 5. Show toast
+      showSquishToast("Your message has been sent!");
+      // Optionally reset form
+      form.reset();
+    }, 1500);
+  });
+
+  // Toast function
+  function showSquishToast(msg) {
+    let toast = document.createElement("div");
+    toast.className = "squish-toast";
+    toast.textContent = msg;
+    document.body.appendChild(toast);
+    setTimeout(() => {
+      toast.classList.add("show");
+    }, 50);
+    setTimeout(() => {
+      toast.classList.remove("show");
+      setTimeout(() => toast.remove(), 400);
+    }, 2500);
+  }
 });

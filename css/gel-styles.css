@@ -1722,7 +1722,7 @@ body {
   /* Mobile Navigation */
   .nav-list {
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2583,13 +2583,13 @@ body {
   left: 50%;
   bottom: 2.5rem;
   transform: translateX(-50%) translateY(100px);
-  background: linear-gradient(90deg, var(--jelly-purple), var(--jelly-pink));
+  background: linear-gradient(90deg, var(--jelly-green), var(--jelly-blue));
   color: #fff;
   font-weight: var(--bounce-weight);
   font-size: 1.1rem;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 0 20px rgba(16, 185, 129, 0.3);
   opacity: 0;
   pointer-events: none;
   z-index: 10000;
@@ -2599,6 +2599,7 @@ body {
   text-align: center;
   word-break: break-word;
   white-space: pre-line;
+  border: 2px solid var(--jelly-yellow);
 }
 .squish-toast.show {
   opacity: 1;
@@ -2611,7 +2612,14 @@ body {
     padding: 1rem 1.5rem;
     bottom: 1.2rem;
     min-width: 0;
-    max-width: 98vw;
+    max-width: 95vw;
+    width: auto;
+    left: 1rem;
+    right: 1rem;
+    transform: translateX(0) translateY(100px);
+  }
+  .squish-toast.show {
+    transform: translateX(0) translateY(0);
   }
   .squish-spinner {
     width: 44px;
